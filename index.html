@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">Your Name</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Your Name</h1>
+          <p class="hero-subtitle">
+            A <span class="highlight">[Your Role]</span> focused on
+            building clean and user-friendly experiences.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View my work</a>
+            <a href="#contact" class="btn ghost">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="hero-card-title">Current focus</p>
+          <p>• [e.g. Frontend development with React]<br />
+             • [e.g. Building accessible UI]<br />
+             • [e.g. Learning TypeScript]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="grid-2">
+          <p>
+            Write a short paragraph about yourself: your background, what you
+            enjoy working on, and what you're looking for (e.g. job, freelance,
+            collaborations).
+          </p>
+          <p>
+            Mention your strengths, your way of working, and maybe a fun fact.
+            Keep it human and concise. You can also link to your
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            or <a href="https://github.com" target="_blank">GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Project One</h3>
+            <p class="card-meta">Tech: HTML, CSS, JavaScript</p>
+            <p>
+              Short description of what this project does, why you built it, and
+              what you learned from it.
+            </p>
+            <div class="card-links">
+              <a href="#" target="_blank">Live demo</a>
+              <a href="#" target="_blank">Source code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Project Two</h3>
+            <p class="card-meta">Tech: React, TypeScript</p>
+            <p>
+              Another project. Try to highlight different skills: performance
+              optimization, UI design, backend integration, etc.
+            </p>
+            <div class="card-links">
+              <a href="#" target="_blank">Live demo</a>
+              <a href="#" target="_blank">Source code</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Project Three</h3>
+            <p class="card-meta">Tech: Node.js, Express</p>
+            <p>
+              Include at least one project that shows backend or full-stack
+              skills, or something non-trivial.
+            </p>
+            <div class="card-links">
+              <a href="#" target="_blank">Live demo</a>
+              <a href="#" target="_blank">Source code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Languages</h3>
+            <ul>
+              <li>JavaScript / TypeScript</li>
+              <li>HTML &amp; CSS</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Frameworks &amp; Tools</h3>
+            <ul>
+              <li>React, Next.js</li>
+              <li>Node.js, Express</li>
+              <li>Git, GitHub</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Other</h3>
+            <ul>
+              <li>Responsive design</li>
+              <li>REST APIs</li>
+              <li>Unit testing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Want to work together or just say hi? Reach out via email:
+          <a href="mailto:you@example.com">you@example.com</a>
+        </p>
+        <p>
+          Or find me on
+          <a href="https://github.com" target="_blank">GitHub</a> •
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+
+    <script>
+      // Set current year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
