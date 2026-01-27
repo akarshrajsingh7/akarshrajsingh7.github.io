@@ -1,32 +1,18 @@
 const navLinks = document.querySelectorAll(".nav-link");
-const sections = document.querySelectorAll("main section");
 const filters = document.querySelectorAll(".timeline-filter");
 const posts = document.querySelectorAll(".post-card");
 const filterLabel = document.getElementById("posts-filter-label");
 const yearEl = document.getElementById("year");
+const currentPage = document.body.dataset.page;
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
-if (sections.length) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          navLinks.forEach((link) => {
-            link.classList.toggle(
-              "active",
-              link.getAttribute("href") === `#${entry.target.id}`
-            );
-          });
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
-
-  sections.forEach((section) => observer.observe(section));
+if (currentPage) {
+  navLinks.forEach((link) => {
+    link.classList.toggle("active", link.dataset.page === currentPage);
+  });
 }
 
 filters.forEach((filter) => {

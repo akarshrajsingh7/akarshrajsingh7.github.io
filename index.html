@@ -12,24 +12,24 @@
     rel="stylesheet"
   />
 </head>
-<body>
+<body data-page="blog">
   <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="#blog">
+      <a class="logo" href="index.html">
         <span class="logo-mark">AI</span>
         <!-- EDIT: Your Name -->Your Name
       </a>
       <nav class="nav-links" aria-label="Primary">
-        <a class="nav-link" href="#blog">Blog</a>
-        <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="index.html" data-page="blog">Blog</a>
+        <a class="nav-link" href="projects.html" data-page="projects">Projects</a>
+        <a class="nav-link" href="about.html" data-page="about">About</a>
       </nav>
     </div>
   </header>
 
   <main>
     <!-- Blog Section -->
-    <section id="blog" class="section">
+    <section class="section">
       <div class="container section-header">
         <div>
           <p class="kicker">Archive</p>
@@ -202,165 +202,6 @@
               polish.
             </p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section section-alt">
-      <div class="container section-header">
-        <div>
-          <p class="kicker">Selected work</p>
-          <h2>Projects</h2>
-        </div>
-        <p class="section-lede">Product experiments, AI tooling, and dev experience.</p>
-      </div>
-
-      <div class="container projects-grid">
-        <!-- EDIT: Project details -->
-        <article class="project-card">
-          <h3>ContextCanvas</h3>
-          <p>
-            A research assistant that maps sources, summaries, and citations into a single
-            interactive workspace.
-          </p>
-          <p class="project-meta">Tech stack: React, Node.js, PostgreSQL</p>
-          <div class="project-links">
-            <a href="#">View Live</a>
-            <a href="#">Source Code</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>SignalStudio</h3>
-          <p>
-            A realtime analytics dashboard for LLM product telemetry with alerting and
-            retention cohorts.
-          </p>
-          <p class="project-meta">Tech stack: Next.js, Python, TimescaleDB</p>
-          <div class="project-links">
-            <a href="#">View Live</a>
-            <a href="#">Source Code</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>PromptKit</h3>
-          <p>
-            A prompt library with evaluation templates, rubrics, and rollout tooling for
-            multi-team organizations.
-          </p>
-          <p class="project-meta">Tech stack: Vue, FastAPI, Redis</p>
-          <div class="project-links">
-            <a href="#">View Live</a>
-            <a href="#">Source Code</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>AtlasWrite</h3>
-          <p>
-            A long-form writing app with idea trails, backlinks, and on-device embeddings.
-          </p>
-          <p class="project-meta">Tech stack: Electron, SQLite, TypeScript</p>
-          <div class="project-links">
-            <a href="#">View Live</a>
-            <a href="#">Source Code</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>EdgeNotes</h3>
-          <p>
-            A minimal note system for capturing field observations with offline sync.
-          </p>
-          <p class="project-meta">Tech stack: Svelte, Supabase, Tailwind</p>
-          <div class="project-links">
-            <a href="#">View Live</a>
-            <a href="#">Source Code</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>VectorLens</h3>
-          <p>
-            A vector search benchmarking suite for comparing embeddings, rerankers, and
-            chunking strategies.
-          </p>
-          <p class="project-meta">Tech stack: Go, Python, ElasticSearch</p>
-          <div class="project-links">
-            <a href="#">View Live</a>
-            <a href="#">Source Code</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container section-header">
-        <div>
-          <p class="kicker">Who I am</p>
-          <h2>About Me</h2>
-        </div>
-        <p class="section-lede">
-          Building thoughtful AI tools and writing about the craft behind them.
-        </p>
-      </div>
-
-      <div class="container about-grid">
-        <div class="about-photo">
-          <!-- EDIT: Profile image URL -->
-          <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=640&q=80" alt="Portrait of Your Name" />
-        </div>
-        <div class="about-content">
-          <h3><!-- EDIT: Your Name -->Hi, I'm Your Name</h3>
-          <p>
-            I'm an AI-focused software engineer with a passion for building products that feel
-            human, reliable, and fast. I work across research, product, and engineering to ship
-            prototypes that scale into production systems.
-          </p>
-          <p>
-            When I'm not building, I'm documenting lessons learned from shipping LLM apps,
-            experimenting with new prompt workflows, and mentoring teams on applied ML.
-          </p>
-
-          <div class="resume-card">
-            <p>Download my resume:</p>
-            <!-- EDIT: Resume link -->
-            <a class="btn primary" href="resume.pdf">Download Resume</a>
-          </div>
-
-          <div class="contact-card">
-            <h4>Contact</h4>
-            <p>
-              Feel free to reach out for collaborations, questions, or opportunities.
-            </p>
-            <!-- EDIT: Your email -->
-            <a class="contact-email" href="mailto:you@example.com">you@example.com</a>
-
-            <div class="social-links">
-              <!-- EDIT: Social links -->
-              <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-            </div>
-
-            <form class="contact-form">
-              <label>
-                Name
-                <input type="text" name="name" placeholder="Your name" />
-              </label>
-              <label>
-                Email
-                <input type="email" name="email" placeholder="you@example.com" />
-              </label>
-              <label>
-                Message
-                <textarea name="message" rows="4" placeholder="How can I help?"></textarea>
-              </label>
-              <button class="btn primary" type="submit">Send Message</button>
-            </form>
-          </div>
         </div>
       </div>
     </section>
