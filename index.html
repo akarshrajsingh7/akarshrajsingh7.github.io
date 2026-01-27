@@ -3,173 +3,379 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title><!-- EDIT: Your Name -->Your Name | AI + Tech Blog</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <div class="logo">Your Name</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+      <a class="logo" href="#blog">
+        <span class="logo-mark">AI</span>
+        <!-- EDIT: Your Name -->Your Name
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="#blog">Blog</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#about">About</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container hero-inner">
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+      <div class="container section-header">
         <div>
-          <p class="eyebrow">Hello, I'm</p>
-          <h1>Your Name</h1>
-          <p class="hero-subtitle">
-            A <span class="highlight">[Your Role]</span> focused on
-            building clean and user-friendly experiences.
-          </p>
-          <div class="hero-actions">
-            <a href="#projects" class="btn primary">View my work</a>
-            <a href="#contact" class="btn ghost">Contact me</a>
-          </div>
+          <p class="kicker">Archive</p>
+          <h2>Blog</h2>
         </div>
-        <div class="hero-card">
-          <p class="hero-card-title">Current focus</p>
-          <p>• [e.g. Frontend development with React]<br />
-             • [e.g. Building accessible UI]<br />
-             • [e.g. Learning TypeScript]</p>
-        </div>
+        <p class="section-lede">
+          Thoughts on AI, systems thinking, and building reliable software.
+        </p>
       </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <div class="grid-2">
-          <p>
-            Write a short paragraph about yourself: your background, what you
-            enjoy working on, and what you're looking for (e.g. job, freelance,
-            collaborations).
-          </p>
-          <p>
-            Mention your strengths, your way of working, and maybe a fun fact.
-            Keep it human and concise. You can also link to your
-            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-            or <a href="https://github.com" target="_blank">GitHub</a>.
-          </p>
+      <div class="container blog-layout">
+        <aside class="timeline" aria-label="Blog timeline">
+          <div class="timeline-header">
+            <h3>Timeline</h3>
+            <button class="timeline-filter active" type="button" data-month="all">
+              All posts
+            </button>
+          </div>
+
+          <div class="year-group">
+            <h4>2025</h4>
+            <ul>
+              <li>
+                <button class="timeline-filter" type="button" data-month="2025-12">
+                  December
+                </button>
+              </li>
+              <li>
+                <button class="timeline-filter" type="button" data-month="2025-10">
+                  October
+                </button>
+              </li>
+              <li>
+                <button class="timeline-filter" type="button" data-month="2025-08">
+                  August
+                </button>
+              </li>
+              <li>
+                <button class="timeline-filter" type="button" data-month="2025-06">
+                  June
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="year-group">
+            <h4>2024</h4>
+            <ul>
+              <li>
+                <button class="timeline-filter" type="button" data-month="2024-11">
+                  November
+                </button>
+              </li>
+              <li>
+                <button class="timeline-filter" type="button" data-month="2024-09">
+                  September
+                </button>
+              </li>
+              <li>
+                <button class="timeline-filter" type="button" data-month="2024-04">
+                  April
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="year-group">
+            <h4>2023</h4>
+            <ul>
+              <li>
+                <button class="timeline-filter" type="button" data-month="2023-12">
+                  December
+                </button>
+              </li>
+              <li>
+                <button class="timeline-filter" type="button" data-month="2023-07">
+                  July
+                </button>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="posts">
+          <div class="posts-header">
+            <div>
+              <h3>Posts</h3>
+              <p id="posts-filter-label">Showing: All posts</p>
+            </div>
+            <div class="posts-meta">Updated for 2025</div>
+          </div>
+
+          <!-- EDIT: Blog posts -->
+          <article class="post-card" data-month="2025-12">
+            <p class="post-date">Dec 18, 2025</p>
+            <h3>Building calm agents: designing AI systems with guardrails</h3>
+            <p>
+              A practical framework for aligning assistant behavior with user intent while
+              preserving speed and creativity.
+            </p>
+          </article>
+
+          <article class="post-card" data-month="2025-10">
+            <p class="post-date">Oct 02, 2025</p>
+            <h3>Latency budgets for LLM apps</h3>
+            <p>
+              How to plan, measure, and reduce latency across retrieval, routing, and tool
+              execution.
+            </p>
+          </article>
+
+          <article class="post-card" data-month="2025-08">
+            <p class="post-date">Aug 21, 2025</p>
+            <h3>RAG in production: a reliability checklist</h3>
+            <p>
+              Lessons learned from real deployments: data freshness, eval loops, and fallback
+              behavior.
+            </p>
+          </article>
+
+          <article class="post-card" data-month="2025-06">
+            <p class="post-date">Jun 09, 2025</p>
+            <h3>Designing prompts that scale across teams</h3>
+            <p>
+              Shared prompt libraries, tone guidelines, and evaluation hooks that keep voice
+              consistent.
+            </p>
+          </article>
+
+          <article class="post-card" data-month="2024-11">
+            <p class="post-date">Nov 17, 2024</p>
+            <h3>Observability for AI-first products</h3>
+            <p>
+              What to log, what to redact, and how to build dashboards that help you iterate
+              safely.
+            </p>
+          </article>
+
+          <article class="post-card" data-month="2024-09">
+            <p class="post-date">Sep 05, 2024</p>
+            <h3>From notebooks to services: shipping ML research</h3>
+            <p>
+              Bridging the gap between experiments and production-ready systems with minimal
+              overhead.
+            </p>
+          </article>
+
+          <article class="post-card" data-month="2024-04">
+            <p class="post-date">Apr 12, 2024</p>
+            <h3>Personal knowledge graphs for builders</h3>
+            <p>
+              A lightweight approach to capturing ideas, sources, and connections without
+              overwhelming tooling.
+            </p>
+          </article>
+
+          <article class="post-card" data-month="2023-12">
+            <p class="post-date">Dec 29, 2023</p>
+            <h3>Year in review: prototypes that mattered</h3>
+            <p>
+              The experiments, demos, and research notes that shaped my 2023 learning goals.
+            </p>
+          </article>
+
+          <article class="post-card" data-month="2023-07">
+            <p class="post-date">Jul 08, 2023</p>
+            <h3>Why I build in public</h3>
+            <p>
+              Sharing your process builds momentum and feedback loops — without sacrificing
+              polish.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section section-alt">
-      <div class="container">
-        <h2>Projects</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>Project One</h3>
-            <p class="card-meta">Tech: HTML, CSS, JavaScript</p>
-            <p>
-              Short description of what this project does, why you built it, and
-              what you learned from it.
-            </p>
-            <div class="card-links">
-              <a href="#" target="_blank">Live demo</a>
-              <a href="#" target="_blank">Source code</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Project Two</h3>
-            <p class="card-meta">Tech: React, TypeScript</p>
-            <p>
-              Another project. Try to highlight different skills: performance
-              optimization, UI design, backend integration, etc.
-            </p>
-            <div class="card-links">
-              <a href="#" target="_blank">Live demo</a>
-              <a href="#" target="_blank">Source code</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Project Three</h3>
-            <p class="card-meta">Tech: Node.js, Express</p>
-            <p>
-              Include at least one project that shows backend or full-stack
-              skills, or something non-trivial.
-            </p>
-            <div class="card-links">
-              <a href="#" target="_blank">Live demo</a>
-              <a href="#" target="_blank">Source code</a>
-            </div>
-          </article>
+      <div class="container section-header">
+        <div>
+          <p class="kicker">Selected work</p>
+          <h2>Projects</h2>
         </div>
+        <p class="section-lede">Product experiments, AI tooling, and dev experience.</p>
+      </div>
+
+      <div class="container projects-grid">
+        <!-- EDIT: Project details -->
+        <article class="project-card">
+          <h3>ContextCanvas</h3>
+          <p>
+            A research assistant that maps sources, summaries, and citations into a single
+            interactive workspace.
+          </p>
+          <p class="project-meta">Tech stack: React, Node.js, PostgreSQL</p>
+          <div class="project-links">
+            <a href="#">View Live</a>
+            <a href="#">Source Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>SignalStudio</h3>
+          <p>
+            A realtime analytics dashboard for LLM product telemetry with alerting and
+            retention cohorts.
+          </p>
+          <p class="project-meta">Tech stack: Next.js, Python, TimescaleDB</p>
+          <div class="project-links">
+            <a href="#">View Live</a>
+            <a href="#">Source Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>PromptKit</h3>
+          <p>
+            A prompt library with evaluation templates, rubrics, and rollout tooling for
+            multi-team organizations.
+          </p>
+          <p class="project-meta">Tech stack: Vue, FastAPI, Redis</p>
+          <div class="project-links">
+            <a href="#">View Live</a>
+            <a href="#">Source Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>AtlasWrite</h3>
+          <p>
+            A long-form writing app with idea trails, backlinks, and on-device embeddings.
+          </p>
+          <p class="project-meta">Tech stack: Electron, SQLite, TypeScript</p>
+          <div class="project-links">
+            <a href="#">View Live</a>
+            <a href="#">Source Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>EdgeNotes</h3>
+          <p>
+            A minimal note system for capturing field observations with offline sync.
+          </p>
+          <p class="project-meta">Tech stack: Svelte, Supabase, Tailwind</p>
+          <div class="project-links">
+            <a href="#">View Live</a>
+            <a href="#">Source Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>VectorLens</h3>
+          <p>
+            A vector search benchmarking suite for comparing embeddings, rerankers, and
+            chunking strategies.
+          </p>
+          <p class="project-meta">Tech stack: Go, Python, ElasticSearch</p>
+          <div class="project-links">
+            <a href="#">View Live</a>
+            <a href="#">Source Code</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div>
-            <h3>Languages</h3>
-            <ul>
-              <li>JavaScript / TypeScript</li>
-              <li>HTML &amp; CSS</li>
-              <li>Python</li>
-            </ul>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container section-header">
+        <div>
+          <p class="kicker">Who I am</p>
+          <h2>About Me</h2>
+        </div>
+        <p class="section-lede">
+          Building thoughtful AI tools and writing about the craft behind them.
+        </p>
+      </div>
+
+      <div class="container about-grid">
+        <div class="about-photo">
+          <!-- EDIT: Profile image URL -->
+          <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=640&q=80" alt="Portrait of Your Name" />
+        </div>
+        <div class="about-content">
+          <h3><!-- EDIT: Your Name -->Hi, I'm Your Name</h3>
+          <p>
+            I'm an AI-focused software engineer with a passion for building products that feel
+            human, reliable, and fast. I work across research, product, and engineering to ship
+            prototypes that scale into production systems.
+          </p>
+          <p>
+            When I'm not building, I'm documenting lessons learned from shipping LLM apps,
+            experimenting with new prompt workflows, and mentoring teams on applied ML.
+          </p>
+
+          <div class="resume-card">
+            <p>Download my resume:</p>
+            <!-- EDIT: Resume link -->
+            <a class="btn primary" href="resume.pdf">Download Resume</a>
           </div>
-          <div>
-            <h3>Frameworks &amp; Tools</h3>
-            <ul>
-              <li>React, Next.js</li>
-              <li>Node.js, Express</li>
-              <li>Git, GitHub</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Other</h3>
-            <ul>
-              <li>Responsive design</li>
-              <li>REST APIs</li>
-              <li>Unit testing</li>
-            </ul>
+
+          <div class="contact-card">
+            <h4>Contact</h4>
+            <p>
+              Feel free to reach out for collaborations, questions, or opportunities.
+            </p>
+            <!-- EDIT: Your email -->
+            <a class="contact-email" href="mailto:you@example.com">you@example.com</a>
+
+            <div class="social-links">
+              <!-- EDIT: Social links -->
+              <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+
+            <form class="contact-form">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" />
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="4" placeholder="How can I help?"></textarea>
+              </label>
+              <button class="btn primary" type="submit">Send Message</button>
+            </form>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          Want to work together or just say hi? Reach out via email:
-          <a href="mailto:you@example.com">you@example.com</a>
-        </p>
-        <p>
-          Or find me on
-          <a href="https://github.com" target="_blank">GitHub</a> •
-          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        </p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <!-- EDIT: Your Name -->Your Name. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
     </div>
-
-    <script>
-      // Set current year in footer
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
