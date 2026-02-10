@@ -3,14 +3,38 @@
   --bg: #ffffff;
   --bg-accent: #ffffff;
   --surface: #ffffff;
+  --surface-muted: #ffffff;
   --ink: #151515;
   --muted: #5e5a55;
   --accent: #1f5b5b;
+  --on-accent: #ffffff;
   --accent-soft: rgba(31, 91, 91, 0.12);
   --border: rgba(21, 21, 21, 0.12);
   --shadow: 0 18px 40px rgba(19, 18, 17, 0.08);
+  --input-bg: #fefcf9;
+  --tag-bg: #fbfcff;
+  --details-gradient: linear-gradient(180deg, #f9f7f3 0%, #f4f8f8 100%);
+  --contact-gradient: radial-gradient(circle at 20% 20%, #eef7f7, #f8f4ee 58%);
   --radius-lg: 24px;
   --radius-md: 16px;
+}
+
+body.theme-dark {
+  --bg: #0f1216;
+  --bg-accent: #12171c;
+  --surface: #181f26;
+  --surface-muted: #1f2730;
+  --ink: #e8edf3;
+  --muted: #aab5c2;
+  --accent: #6bc5b7;
+  --on-accent: #072222;
+  --accent-soft: rgba(107, 197, 183, 0.18);
+  --border: rgba(232, 237, 243, 0.18);
+  --shadow: 0 16px 34px rgba(0, 0, 0, 0.35);
+  --input-bg: #121a22;
+  --tag-bg: #14202b;
+  --details-gradient: linear-gradient(180deg, #12171c 0%, #0f1216 100%);
+  --contact-gradient: radial-gradient(circle at 20% 20%, #14202b, #12171c 58%);
 }
 
 * {
@@ -25,7 +49,7 @@ body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
   color: var(--ink);
-  background: #ffffff;
+  background: var(--bg);
   line-height: 1.6;
 }
 
@@ -95,7 +119,7 @@ h1 {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: #ffffff;
+  background: var(--surface);
   border-bottom: 1px solid var(--border);
 }
 
@@ -104,6 +128,12 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+}
+
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .logo {
@@ -117,7 +147,7 @@ h1 {
 
 .logo-mark {
   background: var(--accent);
-  color: white;
+  color: var(--on-accent);
   border-radius: 999px;
   font-size: 0.72rem;
   padding: 0.32rem 0.6rem;
@@ -142,6 +172,22 @@ h1 {
 .nav-link:hover {
   color: var(--accent);
   border-bottom-color: var(--accent);
+}
+
+.theme-toggle {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .blog-layout {
@@ -344,7 +390,7 @@ h1 {
 
 .btn.primary {
   background: var(--accent);
-  color: white;
+  color: var(--on-accent);
 }
 
 .contact-email {
@@ -381,7 +427,8 @@ h1 {
   padding: 0.7rem 0.9rem;
   font-size: 0.95rem;
   font-family: inherit;
-  background: #fefcf9;
+  background: var(--input-bg);
+  color: var(--ink);
 }
 
 .about-hero-section {
@@ -465,7 +512,7 @@ h1 {
 }
 
 .about-details-section {
-  background: linear-gradient(180deg, #f9f7f3 0%, #f4f8f8 100%);
+  background: var(--details-gradient);
 }
 
 .about-layout {
@@ -507,7 +554,7 @@ h1 {
 
 .about-tags span {
   border: 1px solid var(--border);
-  background: #fbfcff;
+  background: var(--tag-bg);
   border-radius: 999px;
   padding: 0.3rem 0.8rem;
   font-size: 0.84rem;
@@ -548,7 +595,7 @@ h1 {
 }
 
 .about-contact-section {
-  background: radial-gradient(circle at 20% 20%, #eef7f7, #f8f4ee 58%);
+  background: var(--contact-gradient);
 }
 
 .about-contact-grid {
@@ -584,7 +631,7 @@ h1 {
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 1rem;
-  background: #ffffff;
+  background: var(--surface-muted);
 }
 
 .contact-mini-card h3 {
@@ -604,7 +651,7 @@ h1 {
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 2rem 0;
-  background: #f9f5ef;
+  background: var(--bg-accent);
 }
 
 .footer-inner {
@@ -631,6 +678,13 @@ h1 {
   width: 1rem;
   height: 1rem;
   fill: currentColor;
+  flex: 0 0 auto;
+}
+
+.icon-img {
+  width: 1rem;
+  height: 1rem;
+  display: block;
   flex: 0 0 auto;
 }
 
@@ -673,6 +727,11 @@ h1 {
   .nav {
     flex-direction: column;
     gap: 0.8rem;
+  }
+
+  .nav-actions {
+    flex-direction: column;
+    gap: 0.6rem;
   }
 
   .nav-links {
