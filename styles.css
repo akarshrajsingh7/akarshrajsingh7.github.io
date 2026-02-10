@@ -145,6 +145,13 @@ h1 {
   gap: 0.6rem;
 }
 
+.site-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
 .logo-mark {
   background: var(--accent);
   color: var(--on-accent);

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><!-- EDIT: Your Name -->Your Name | AI + Tech Blog</title>
+  <title>Akarsh | Blogs</title>
+  <link rel="icon" type="image/png" href="Site_Logo.png" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,14 +17,19 @@
   <header class="site-header">
     <div class="container nav">
       <a class="logo" href="index.html">
-        <span class="logo-mark">AI</span>
-        <!-- EDIT: Your Name -->Your Name
+        <img class="site-logo" src="Site_Logo.png" alt="Akarsh Raj logo" />
+        Akarsh Raj
       </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a class="nav-link" href="index.html" data-page="blog">Blog</a>
-        <a class="nav-link" href="projects.html" data-page="projects">Projects</a>
-        <a class="nav-link" href="about.html" data-page="about">About</a>
-      </nav>
+      <div class="nav-actions">
+        <nav class="nav-links" aria-label="Primary">
+          <a class="nav-link" href="index.html" data-page="blog">Blog</a>
+          <a class="nav-link" href="projects.html" data-page="projects">Projects</a>
+          <a class="nav-link" href="about.html" data-page="about">About</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark theme">
+          Dark Theme
+        </button>
+      </div>
     </div>
   </header>
 
@@ -209,10 +215,24 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> <!-- EDIT: Your Name -->Your Name. All rights reserved.</p>
+      <p>© <span id="year"></span> Akarsh Raj. All rights reserved.</p>
       <div class="footer-links">
-        <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="icon-link" href="https://github.com/akarshrajsingh7" target="_blank" rel="noreferrer">
+          <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.46c.53.1.72-.23.72-.5v-1.9c-2.95.64-3.57-1.25-3.57-1.25-.47-1.2-1.16-1.52-1.16-1.52-.95-.64.08-.63.08-.63 1.06.07 1.61 1.08 1.61 1.08.93 1.6 2.45 1.13 3.05.87.1-.68.37-1.13.67-1.4-2.35-.27-4.82-1.17-4.82-5.2 0-1.15.4-2.08 1.08-2.82-.1-.27-.47-1.38.1-2.88 0 0 .89-.28 2.9 1.08a10.2 10.2 0 0 1 5.3 0c2-1.36 2.9-1.08 2.9-1.08.58 1.5.2 2.61.1 2.88.68.74 1.08 1.67 1.08 2.82 0 4.04-2.48 4.92-4.84 5.18.38.33.72.95.72 1.92v2.84c0 .28.2.61.73.5A10.5 10.5 0 0 0 12 1.5Z"/>
+          </svg>
+          GitHub
+        </a>
+        <a class="icon-link" href="https://www.linkedin.com/in/akarshrajsingh7/" target="_blank" rel="noreferrer">
+          <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.94 8.5a1.56 1.56 0 1 1 0-3.12 1.56 1.56 0 0 1 0 3.12ZM8.3 20.5H5.58V10.3H8.3v10.2Zm4.34-10.2v1.4h.04c.38-.72 1.3-1.48 2.67-1.48 2.86 0 3.39 1.88 3.39 4.33v5.95h-2.72V15.2c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.8v5.4H9.5V10.3h2.61Z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a class="icon-link" href="https://www.kaggle.com/akarshrajsingh7" target="_blank" rel="noreferrer">
+          <img class="icon-img" src="https://cdn.simpleicons.org/kaggle" alt="" aria-hidden="true" />
+          Kaggle
+        </a>
       </div>
     </div>
   </footer>
