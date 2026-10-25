@@ -41,3 +41,19 @@
   .projects-page .project-card { padding: 24px; }
   .projects-page .project-card h3 { font-size: 25px; }
 }
+
+.project-company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  max-width: 100%;
+  height: 64px;
+  padding: 12px;
+  margin-bottom: 18px;
+  background: #fff;
+  border: 1px solid #e5e5df;
+  border-radius: 5px;
+}
+.project-employer-logo { width: 144px; height: 40px; object-fit: contain; }
+.project-employer-logo--zs { width: 52px; }

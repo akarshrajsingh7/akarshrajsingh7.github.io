@@ -41,16 +41,91 @@
     <div class="container projects-intro">
       <p class="eyebrow">Ideas into implementations</p>
       <h1>Projects<span>.</span></h1>
-      <p>Personal experiments, open-source tools, and AI systems built for real business problems.</p>
+      <p>AI systems built for real business problems, personal experiments, and open-source tools.</p>
       <nav class="project-section-nav" aria-label="Project sections">
-        <a href="#personal-projects">Personal Projects <span aria-hidden="true">↘</span></a>
         <a href="#professional-projects">Professional Projects <span aria-hidden="true">↘</span></a>
+        <a href="#personal-projects">Personal Projects <span aria-hidden="true">↘</span></a>
       </nav>
     </div>
 
+    <section id="professional-projects" class="section professional-projects" aria-labelledby="professional-title">
+      <div class="container section-header">
+        <div>
+          <p class="eyebrow">01 / Industry &amp; research</p>
+          <h2 id="professional-title">Professional Projects</h2>
+        </div>
+        <p class="section-lede">Selected work in agentic AI, research automation, healthcare, insurance, and diffusion models.</p>
+      </div>
+
+      <div class="container projects-grid">
+        <article class="project-card">
+          <div class="project-company-logo"><img class="project-employer-logo project-employer-logo--siemens-healthineers" src="assets/logos/siemens-healthineers.svg" alt="" loading="lazy" width="144" height="40" /></div>
+          <p class="kicker">Siemens Healthineers</p>
+          <h3>Multi-agent financial decision support</h3>
+          <p>Architected a RAG system combining retrieval and LLM reasoning with deterministic Python calculations. Added traceable tool execution and Langfuse monitoring and evaluation, then containerized and deployed the application on SAP BTP.</p>
+          <p class="project-meta">LangGraph, LangChain, Python, Langfuse, SAP BTP</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-company-logo"><img class="project-employer-logo project-employer-logo--evalueserve" src="assets/logos/evalueserve.svg" alt="" loading="lazy" width="144" height="40" /></div>
+          <p class="kicker">Evalueserve</p>
+          <h3>Infinity AI</h3>
+          <p>Led a GPT-based RAG application for document Q&amp;A and information extraction. Designed retrieval and ranking from scratch, with PII redaction and scalable OCR/table extraction for scanned documents. Improved research turnaround time and quality by 30%+.</p>
+          <p class="project-meta">GPT models, RAG, retrieval, ranking, OCR</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-company-logo"><img class="project-employer-logo project-employer-logo--evalueserve" src="assets/logos/evalueserve.svg" alt="" loading="lazy" width="144" height="40" /></div>
+          <p class="kicker">Evalueserve</p>
+          <h3>Canvass AI</h3>
+          <p>Led an NLP system for competitive intelligence, combining web crawling, search-result analysis, named entity recognition, n-gram analysis, and theme extraction. Increased researcher efficiency by 40%+ and received the Dream Team Award.</p>
+          <p class="project-meta">NLP, SERP-API, NER, theme extraction</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-company-logo"><img class="project-employer-logo project-employer-logo--zs" src="assets/logos/zs.svg" alt="" loading="lazy" width="144" height="40" /></div>
+          <p class="kicker">ZS Associates</p>
+          <h3>Copay anomaly detection</h3>
+          <p>Built an engine to identify fraudulent pharmacies and prescribers, uncovering $3M+ in annual fraudulent transactions. Added SHAP explanations to support interpretation and deployed via Databricks and Azure.</p>
+          <p class="project-meta">Autoencoders, isolation forest, SHAP, Databricks, Azure</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-company-logo"><img class="project-employer-logo project-employer-logo--zs" src="assets/logos/zs.svg" alt="" loading="lazy" width="144" height="40" /></div>
+          <p class="kicker">ZS Associates</p>
+          <h3>Clinical trial optimization</h3>
+          <p>Turned an open-ended client request into a mixed-integer linear programming solution for clinical trial site selection and study duration, satisfying thousands of operational constraints. Presented and defended recommendations directly to client stakeholders.</p>
+          <p class="project-meta">Mixed-integer linear programming, optimization</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-company-logo"><img class="project-employer-logo project-employer-logo--zs" src="assets/logos/zs.svg" alt="" loading="lazy" width="144" height="40" /></div>
+          <p class="kicker">ZS Associates</p>
+          <h3>Medical taxonomy &amp; knowledge graph</h3>
+          <p>Built a knowledge graph from medical field agent notes using BERTopic, deploying a hierarchical taxonomy in Neo4j for semantic querying and relationship mapping.</p>
+          <p class="project-meta">BERTopic, Neo4j, knowledge graphs</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-company-logo"><img class="project-employer-logo project-employer-logo--xceedance" src="assets/logos/xceedance.svg" alt="" loading="lazy" width="144" height="40" /></div>
+          <p class="kicker">Xceedance</p>
+          <h3>Insurance loss prediction &amp; underwriting</h3>
+          <p>Developed a first-year loss prediction model generating 4M+ in annual profit for a major US insurer, with explainability and a Flask API. Built a separate LSTM/OCR text classification system that reduced underwriting processing from 20 minutes per entry to an instant for a Fortune 10 client.</p>
+          <p class="project-meta">Python, Flask, LSTM, OCR</p>
+        </article>
+
+        <article class="project-card">
+          <p class="kicker">FAU · Master’s thesis</p>
+          <h3>One-step text-to-image diffusion</h3>
+          <p>Researched enhancements to one-step text-to-image diffusion models using knowledge graphs and RL-like reward-based noise optimization. Thesis grade: 1.3.</p>
+          <p class="project-meta">Diffusion models, knowledge graphs, reward-based optimization</p>
+        </article>
+      </div>
+    </section>
+
     <section id="personal-projects" class="section personal-projects" aria-labelledby="personal-title">
       <div class="container section-header">
-        <div><p class="eyebrow">01 / Open source</p><h2 id="personal-title">Personal Projects</h2></div>
+        <div><p class="eyebrow">02 / Open source</p><h2 id="personal-title">Personal Projects</h2></div>
         <p class="section-lede">Four pinned repositories — tools I wanted to use and fundamentals I wanted to understand.</p>
       </div>
       <div class="container personal-projects-grid">
@@ -85,73 +160,6 @@
       </div>
     </section>
 
-    <section id="professional-projects" class="section professional-projects" aria-labelledby="professional-title">
-      <div class="container section-header">
-        <div>
-          <p class="eyebrow">02 / Industry &amp; research</p>
-          <h2 id="professional-title">Professional Projects</h2>
-        </div>
-        <p class="section-lede">Selected work in agentic AI, research automation, healthcare, insurance, and diffusion models.</p>
-      </div>
-
-      <div class="container projects-grid">
-        <article class="project-card">
-          <p class="kicker">Siemens Healthineers</p>
-          <h3>Multi-agent financial decision support</h3>
-          <p>Architected a RAG system combining retrieval and LLM reasoning with deterministic Python calculations. Added traceable tool execution and Langfuse monitoring and evaluation, then containerized and deployed the application on SAP BTP.</p>
-          <p class="project-meta">LangGraph, LangChain, Python, Langfuse, SAP BTP</p>
-        </article>
-
-        <article class="project-card">
-          <p class="kicker">Evalueserve</p>
-          <h3>Infinity AI</h3>
-          <p>Led a GPT-based RAG application for document Q&amp;A and information extraction. Designed retrieval and ranking from scratch, with PII redaction and scalable OCR/table extraction for scanned documents. Improved research turnaround time and quality by 30%+.</p>
-          <p class="project-meta">GPT models, RAG, retrieval, ranking, OCR</p>
-        </article>
-
-        <article class="project-card">
-          <p class="kicker">Evalueserve</p>
-          <h3>Canvass AI</h3>
-          <p>Led an NLP system for competitive intelligence, combining web crawling, search-result analysis, named entity recognition, n-gram analysis, and theme extraction. Increased researcher efficiency by 40%+ and received the Dream Team Award.</p>
-          <p class="project-meta">NLP, SERP-API, NER, theme extraction</p>
-        </article>
-
-        <article class="project-card">
-          <p class="kicker">ZS Associates</p>
-          <h3>Copay anomaly detection</h3>
-          <p>Built an engine to identify fraudulent pharmacies and prescribers, uncovering $3M+ in annual fraudulent transactions. Added SHAP explanations to support interpretation and deployed via Databricks and Azure.</p>
-          <p class="project-meta">Autoencoders, isolation forest, SHAP, Databricks, Azure</p>
-        </article>
-
-        <article class="project-card">
-          <p class="kicker">ZS Associates</p>
-          <h3>Clinical trial optimization</h3>
-          <p>Turned an open-ended client request into a mixed-integer linear programming solution for clinical trial site selection and study duration, satisfying thousands of operational constraints. Presented and defended recommendations directly to client stakeholders.</p>
-          <p class="project-meta">Mixed-integer linear programming, optimization</p>
-        </article>
-
-        <article class="project-card">
-          <p class="kicker">ZS Associates</p>
-          <h3>Medical taxonomy &amp; knowledge graph</h3>
-          <p>Built a knowledge graph from medical field agent notes using BERTopic, deploying a hierarchical taxonomy in Neo4j for semantic querying and relationship mapping.</p>
-          <p class="project-meta">BERTopic, Neo4j, knowledge graphs</p>
-        </article>
-
-        <article class="project-card">
-          <p class="kicker">Xceedance</p>
-          <h3>Insurance loss prediction &amp; underwriting</h3>
-          <p>Developed a first-year loss prediction model generating 4M+ in annual profit for a major US insurer, with explainability and a Flask API. Built a separate LSTM/OCR text classification system that reduced underwriting processing from 20 minutes per entry to an instant for a Fortune 10 client.</p>
-          <p class="project-meta">Python, Flask, LSTM, OCR</p>
-        </article>
-
-        <article class="project-card">
-          <p class="kicker">FAU · Master’s thesis</p>
-          <h3>One-step text-to-image diffusion</h3>
-          <p>Researched enhancements to one-step text-to-image diffusion models using knowledge graphs and RL-like reward-based noise optimization. Thesis grade: 1.3.</p>
-          <p class="project-meta">Diffusion models, knowledge graphs, reward-based optimization</p>
-        </article>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
