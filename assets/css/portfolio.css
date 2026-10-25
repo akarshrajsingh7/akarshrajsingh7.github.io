@@ -249,3 +249,18 @@
   .company-band .company-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
   .company-logos a { height: 72px; padding: 14px; }
 }
+
+.university-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  max-width: 100%;
+  height: 86px;
+  padding: 14px 20px;
+  margin-bottom: 18px;
+  background: #fff;
+  border: 1px solid #e5e5df;
+  border-radius: 5px;
+}
+.university-logo img { width: auto; max-width: 100%; height: auto; max-height: 58px; object-fit: contain; }
