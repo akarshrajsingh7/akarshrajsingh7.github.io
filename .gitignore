@@ -1,0 +1,22 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Generated site and future package dependencies
+/dist/
+/_site/
+/node_modules/
+/coverage/
+__pycache__/
+*.py[cod]
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Preserved experiments and reference checkouts stay local
+/archive/*
+!/archive/README.md
