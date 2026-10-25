@@ -472,7 +472,7 @@ h1 {
 }
 
 .about-stat-strip > div {
-  background: rgba(255, 255, 255, 0.96);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 0.65rem 0.7rem;
@@ -774,4 +774,25 @@ h1 {
     align-items: flex-start;
     gap: 0.4rem;
   }
+}
+
+.availability {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.profile-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.timeline-item p + p,
+.about-card p + p {
+  margin-top: 0.6rem;
+}
+
+.contact-email {
+  overflow-wrap: anywhere;
 }
