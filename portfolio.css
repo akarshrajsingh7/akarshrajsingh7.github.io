@@ -220,3 +220,32 @@
   html { scroll-behavior: auto; }
   .portfolio *, .portfolio *::before, .portfolio *::after { transition: none !important; }
 }
+
+/* Original company artwork stays on a light surface in both themes. */
+.company-band .company-logos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  min-width: 0;
+}
+.company-logos li { min-width: 0; }
+.company-logos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 76px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e5e5df;
+  border-radius: 5px;
+  transition: border-color .2s;
+}
+.company-logos a:hover { border-color: var(--accent); }
+.company-logo { width: 100%; max-width: 174px; height: 40px; object-fit: contain; }
+.company-logo--zs { max-width: 58px; height: 44px; }
+.company-logo--evalueserve { max-width: 166px; }
+.company-logo--xceedance { max-width: 160px; }
+@media (max-width: 580px) {
+  .company-band .company-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .company-logos a { height: 72px; padding: 14px; }
+}
