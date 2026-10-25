@@ -2,28 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Notes from Akarsh Raj on AI, systems thinking, and building reliable software. AI Solutions Architect based in Munich, Germany." />
+  <meta name="description" content="Agent Fieldnotes by Akarsh Raj. Upcoming essays on AI agents, orchestration, retrieval, tools, and evaluating systems in production." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akarsh | Blogs</title>
+  <meta name="theme-color" content="#f7f6f2" />
+  <title>Agent Fieldnotes — Akarsh Raj</title>
   <link rel="icon" type="image/png" href="Site_Logo.png" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="stylesheet" href="blog-page.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Work+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
 </head>
-<body data-page="blog">
+<body data-page="blog" class="portfolio blog-page">
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="index.html">
-        <img class="site-logo" src="Site_Logo.png" alt="Akarsh Raj logo" />
+      <a class="logo" href="about.html">
+        <span class="monogram" aria-hidden="true">ar<span>.</span></span>
         Akarsh Raj
       </a>
       <div class="nav-actions">
         <nav class="nav-links" aria-label="Primary">
-          <a class="nav-link" href="index.html" data-page="blog">Blog</a>
+          <a class="nav-link" href="index.html" data-page="blog" aria-current="page">Blog</a>
           <a class="nav-link" href="projects.html" data-page="projects">Projects</a>
           <a class="nav-link" href="about.html" data-page="about">About</a>
         </nav>
@@ -34,186 +38,48 @@
     </div>
   </header>
 
-  <main>
-    <!-- Blog Section -->
-    <section class="section">
-      <div class="container section-header">
-        <div>
-          <p class="kicker">Archive</p>
-          <h2>Blog</h2>
-        </div>
-        <p class="section-lede">
-          Thoughts on AI, systems thinking, and building reliable software.
-          I’m Akarsh, an AI Solutions Architect in Munich with 7+ years delivering production AI/ML.
-          <a class="profile-link" href="about.html">Explore my experience →</a>
-        </p>
-      </div>
+  <main id="main">
+    <div class="container publication-bar"><p>An independent notebook by <a href="about.html">Akarsh Raj ↗</a></p><p>AI engineering / Ideas &amp; experiments</p></div>
 
-      <div class="container blog-layout">
-        <aside class="timeline" aria-label="Blog timeline">
-          <div class="timeline-header">
-            <h3>Timeline</h3>
-            <button class="timeline-filter active" type="button" data-month="all">
-              All posts
-            </button>
-          </div>
-
-          <div class="year-group">
-            <h4>2025</h4>
-            <ul>
-              <li>
-                <button class="timeline-filter" type="button" data-month="2025-12">
-                  December
-                </button>
-              </li>
-              <li>
-                <button class="timeline-filter" type="button" data-month="2025-10">
-                  October
-                </button>
-              </li>
-              <li>
-                <button class="timeline-filter" type="button" data-month="2025-08">
-                  August
-                </button>
-              </li>
-              <li>
-                <button class="timeline-filter" type="button" data-month="2025-06">
-                  June
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <div class="year-group">
-            <h4>2024</h4>
-            <ul>
-              <li>
-                <button class="timeline-filter" type="button" data-month="2024-11">
-                  November
-                </button>
-              </li>
-              <li>
-                <button class="timeline-filter" type="button" data-month="2024-09">
-                  September
-                </button>
-              </li>
-              <li>
-                <button class="timeline-filter" type="button" data-month="2024-04">
-                  April
-                </button>
-              </li>
-            </ul>
-          </div>
-
-          <div class="year-group">
-            <h4>2023</h4>
-            <ul>
-              <li>
-                <button class="timeline-filter" type="button" data-month="2023-12">
-                  December
-                </button>
-              </li>
-              <li>
-                <button class="timeline-filter" type="button" data-month="2023-07">
-                  July
-                </button>
-              </li>
-            </ul>
-          </div>
-        </aside>
-
-        <div class="posts">
-          <div class="posts-header">
-            <div>
-              <h3>Posts</h3>
-              <p id="posts-filter-label">Showing: All posts</p>
-            </div>
-            <div class="posts-meta">Updated for 2025</div>
-          </div>
-
-          <!-- EDIT: Blog posts -->
-          <article class="post-card" data-month="2025-12">
-            <p class="post-date">Dec 18, 2025</p>
-            <h3>Building calm agents: designing AI systems with guardrails</h3>
-            <p>
-              A practical framework for aligning assistant behavior with user intent while
-              preserving speed and creativity.
-            </p>
-          </article>
-
-          <article class="post-card" data-month="2025-10">
-            <p class="post-date">Oct 02, 2025</p>
-            <h3>Latency budgets for LLM apps</h3>
-            <p>
-              How to plan, measure, and reduce latency across retrieval, routing, and tool
-              execution.
-            </p>
-          </article>
-
-          <article class="post-card" data-month="2025-08">
-            <p class="post-date">Aug 21, 2025</p>
-            <h3>RAG in production: a reliability checklist</h3>
-            <p>
-              Lessons learned from real deployments: data freshness, eval loops, and fallback
-              behavior.
-            </p>
-          </article>
-
-          <article class="post-card" data-month="2025-06">
-            <p class="post-date">Jun 09, 2025</p>
-            <h3>Designing prompts that scale across teams</h3>
-            <p>
-              Shared prompt libraries, tone guidelines, and evaluation hooks that keep voice
-              consistent.
-            </p>
-          </article>
-
-          <article class="post-card" data-month="2024-11">
-            <p class="post-date">Nov 17, 2024</p>
-            <h3>Observability for AI-first products</h3>
-            <p>
-              What to log, what to redact, and how to build dashboards that help you iterate
-              safely.
-            </p>
-          </article>
-
-          <article class="post-card" data-month="2024-09">
-            <p class="post-date">Sep 05, 2024</p>
-            <h3>From notebooks to services: shipping ML research</h3>
-            <p>
-              Bridging the gap between experiments and production-ready systems with minimal
-              overhead.
-            </p>
-          </article>
-
-          <article class="post-card" data-month="2024-04">
-            <p class="post-date">Apr 12, 2024</p>
-            <h3>Personal knowledge graphs for builders</h3>
-            <p>
-              A lightweight approach to capturing ideas, sources, and connections without
-              overwhelming tooling.
-            </p>
-          </article>
-
-          <article class="post-card" data-month="2023-12">
-            <p class="post-date">Dec 29, 2023</p>
-            <h3>Year in review: prototypes that mattered</h3>
-            <p>
-              The experiments, demos, and research notes that shaped my 2023 learning goals.
-            </p>
-          </article>
-
-          <article class="post-card" data-month="2023-07">
-            <p class="post-date">Jul 08, 2023</p>
-            <h3>Why I build in public</h3>
-            <p>
-              Sharing your process builds momentum and feedback loops — without sacrificing
-              polish.
-            </p>
-          </article>
-        </div>
-      </div>
+    <section class="container journal-hero" aria-labelledby="journal-title">
+      <div class="journal-heading"><p class="eyebrow">A closer look at autonomous systems</p><h1 id="journal-title">Agent<br><em>Fieldnotes.</em><span class="title-asterisk" aria-hidden="true">✳</span></h1><p class="journal-deck">Thinking through the systems <br>that think, plan, and act.</p><a class="journal-anchor" href="#topics">Explore the notebook <span aria-hidden="true">↓</span></a></div>
+      <figure class="agent-illustration" aria-labelledby="loop-caption">
+        <div class="illustration-topline"><span>FIG. 01</span><span>THE AGENT LOOP</span><span aria-hidden="true">↗</span></div>
+        <svg class="agent-loop" viewBox="0 0 500 370" role="img" aria-labelledby="loop-title loop-description">
+          <title id="loop-title">An agent’s path from intent to action</title><desc id="loop-description">A conceptual loop connects context, reasoning, tools, and observation, with human judgment at the center.</desc>
+          <defs><marker id="loop-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M1 1 6 4 1 7" fill="none" stroke="currentColor" stroke-width="1.2" /></marker></defs>
+          <g class="loop-connectors" fill="none" stroke-width="1.2" marker-end="url(#loop-arrow)"><path d="M191 67 H309" /><path d="M385 96 V273"/><path d="M309 303 H191"/><path d="M115 273 V96"/></g>
+          <circle class="loop-orbit" cx="250" cy="185" r="105" fill="none" stroke-dasharray="3 7" />
+          <g class="loop-node"><rect x="39" y="38" width="152" height="58" rx="4"/><text x="115" y="63">01 / CONTEXT</text><text class="node-detail" x="115" y="81">What do we know?</text></g>
+          <g class="loop-node"><rect x="309" y="38" width="152" height="58" rx="4"/><text x="385" y="63">02 / REASON</text><text class="node-detail" x="385" y="81">What comes next?</text></g>
+          <g class="loop-node"><rect x="309" y="274" width="152" height="58" rx="4"/><text x="385" y="299">03 / ACT</text><text class="node-detail" x="385" y="317">Use the right tool.</text></g>
+          <g class="loop-node"><rect x="39" y="274" width="152" height="58" rx="4"/><text x="115" y="299">04 / OBSERVE</text><text class="node-detail" x="115" y="317">What changed?</text></g>
+          <g class="loop-center"><circle cx="250" cy="185" r="61"/><text x="250" y="178">Human</text><text x="250" y="201">judgment.</text></g>
+          <g class="loop-ticks" stroke-width="1"><path d="M250 65 V78 M250 292 V305 M130 185 H143 M357 185 H370"/></g>
+        </svg>
+        <figcaption id="loop-caption"><span>A loop, not a magic trick.</span><span>Intent → action → feedback</span></figcaption>
+      </figure>
     </section>
+
+    <nav class="container notebook-nav" aria-label="Notebook sections"><div><span class="notebook-label">Inside the notebook</span><a href="#writing">The writing <span aria-hidden="true">↘</span></a><a href="#topics">The questions <span aria-hidden="true">↘</span></a><a href="#author">The author <span aria-hidden="true">↘</span></a></div><span class="issue-label">VOL. 01 / BEGINNINGS</span></nav>
+
+    <section id="writing" class="container writing-section" aria-labelledby="writing-title">
+      <div class="journal-section-heading"><p class="eyebrow">01 / The writing</p><h2 id="writing-title">A notebook in the making.</h2><p>Essays, experiments, and practical notes on building agents.</p></div>
+      <!-- Add published article entries here when their full posts are ready. -->
+      <div class="first-note"><div class="note-count" aria-label="No essays published yet">00<span>Published essays</span></div><div class="first-note-copy"><p class="eyebrow">First essays coming soon</p><h3>More questions.<br><em>Better systems.</em></h3><p>I’m starting this space to explore how agents are built, where they break, and what it takes to make them useful. No posts published yet — the questions below are where I plan to begin.</p></div><span class="first-note-mark" aria-hidden="true">✳</span></div>
+    </section>
+
+    <section id="topics" class="topics-section" aria-labelledby="topics-title">
+      <div class="container topics-layout"><div class="topics-intro"><p class="eyebrow">02 / The questions</p><h2 id="topics-title">What’s on <br><em>my mind.</em></h2><p>The themes I plan to explore, one experiment at a time.</p><span class="planned-label">Planned topics / Not published yet</span></div>
+      <div class="topic-list">
+        <article class="topic-row"><span class="topic-number">01</span><div><p class="topic-category">Architecture &amp; orchestration</p><h3>When does a workflow need an agent?</h3><p>Drawing the line between a predictable pipeline and a system that decides its next step.</p></div><span class="topic-symbol" aria-hidden="true">↗</span></article>
+        <article class="topic-row"><span class="topic-number">02</span><div><p class="topic-category">Tools &amp; execution</p><h3>Giving agents tools. And boundaries.</h3><p>Thinking through tool design, permissions, state, and the decisions that belong with people.</p></div><span class="topic-symbol" aria-hidden="true">↗</span></article>
+        <article class="topic-row"><span class="topic-number">03</span><div><p class="topic-category">Retrieval &amp; memory</p><h3>The right context, at the right time.</h3><p>Exploring retrieval, knowledge graphs, and what an agent should remember between steps.</p></div><span class="topic-symbol" aria-hidden="true">↗</span></article>
+        <article class="topic-row"><span class="topic-number">04</span><div><p class="topic-category">Evaluation &amp; production</p><h3>It ran. But did it work?</h3><p>Looking beyond the demo: traces, evaluation, failure cases, and reliable execution.</p></div><span class="topic-symbol" aria-hidden="true">↗</span></article>
+      </div></div>
+    </section>
+
+    <section id="author" class="container journal-author" aria-labelledby="author-title"><div class="author-portrait"><img src="DP-1.jpg" alt="Akarsh Raj" width="1123" height="1401" loading="lazy" /></div><div class="author-copy"><p class="eyebrow">03 / Behind the notes</p><h2 id="author-title">Akarsh Raj<span>.</span></h2><p>I’m an AI Solutions Architect based in Munich, with 7+ years building AI/ML systems across finance, healthcare, insurance, and life sciences. This notebook is a place to think out loud about the engineering behind agents.</p><div class="author-links"><a href="about.html">More about me <span aria-hidden="true">↗</span></a><a href="projects.html">Explore my projects <span aria-hidden="true">↗</span></a></div></div><div class="author-aside"><span aria-hidden="true">↗</span><p>Have a question<br>worth exploring?</p><a href="mailto:akarshraj12@gmail.com">Let’s compare notes.</a></div></section>
   </main>
 
   <footer class="site-footer">
