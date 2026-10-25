@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Selected AI projects by Akarsh Raj: multi-agent RAG, document intelligence, anomaly detection, clinical trial optimization, and diffusion research." />
+  <meta name="description" content="Personal and professional projects by Akarsh Raj: open-source PDF Q&A, reading tools, neural networks from scratch, and production AI solutions." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akarsh | Projects</title>
   <link rel="icon" type="image/png" href="Site_Logo.png" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="stylesheet" href="projects-page.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -14,17 +16,18 @@
     rel="stylesheet"
   />
 </head>
-<body data-page="projects">
+<body data-page="projects" class="portfolio projects-page">
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container nav">
-      <a class="logo" href="index.html">
-        <img class="site-logo" src="Site_Logo.png" alt="Akarsh Raj logo" />
+      <a class="logo" href="about.html">
+        <span class="monogram" aria-hidden="true">ar<span>.</span></span>
         Akarsh Raj
       </a>
       <div class="nav-actions">
         <nav class="nav-links" aria-label="Primary">
           <a class="nav-link" href="index.html" data-page="blog">Blog</a>
-          <a class="nav-link" href="projects.html" data-page="projects">Projects</a>
+          <a class="nav-link" href="projects.html" data-page="projects" aria-current="page">Projects</a>
           <a class="nav-link" href="about.html" data-page="about">About</a>
         </nav>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark theme">
@@ -34,13 +37,59 @@
     </div>
   </header>
 
-  <main>
-    <!-- Projects Section -->
-    <section class="section">
+  <main id="main">
+    <div class="container projects-intro">
+      <p class="eyebrow">Ideas into implementations</p>
+      <h1>Projects<span>.</span></h1>
+      <p>Personal experiments, open-source tools, and AI systems built for real business problems.</p>
+      <nav class="project-section-nav" aria-label="Project sections">
+        <a href="#personal-projects">Personal Projects <span aria-hidden="true">↘</span></a>
+        <a href="#professional-projects">Professional Projects <span aria-hidden="true">↘</span></a>
+      </nav>
+    </div>
+
+    <section id="personal-projects" class="section personal-projects" aria-labelledby="personal-title">
+      <div class="container section-header">
+        <div><p class="eyebrow">01 / Open source</p><h2 id="personal-title">Personal Projects</h2></div>
+        <p class="section-lede">Four pinned repositories — tools I wanted to use and fundamentals I wanted to understand.</p>
+      </div>
+      <div class="container personal-projects-grid">
+        <article class="project-card personal-project-card">
+          <div class="project-card-top"><p class="kicker">Document intelligence</p><span class="project-index" aria-hidden="true">01</span></div>
+          <h3>Ask Your PDFs</h3>
+          <p class="project-description">Ask questions across multiple PDFs through a conversational interface. Uses LangChain and retrieval-augmented generation to ground responses in your documents, with support for open-source LLMs or the OpenAI API.</p>
+          <ul class="project-technologies" aria-label="Technologies"><li>Python</li><li>LangChain</li><li>RAG</li><li>Streamlit</li></ul>
+          <a class="repository-link" href="https://github.com/akarshrajsingh7/Ask-Your-PDFs" target="_blank" rel="noreferrer" aria-label="View Ask Your PDFs on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card personal-project-card">
+          <div class="project-card-top"><p class="kicker">Reading &amp; productivity</p><span class="project-index" aria-hidden="true">02</span></div>
+          <h3>Fastify Reader</h3>
+          <p class="project-description">A reading tool inspired by Bionic Reading. Highlights segments of text, compares the original and formatted versions side by side, and supports PDF and text uploads with PDF export.</p>
+          <ul class="project-technologies" aria-label="Technologies"><li>Python</li><li>PDF processing</li><li>Text formatting</li></ul>
+          <a class="repository-link" href="https://github.com/akarshrajsingh7/Fastify-Reader" target="_blank" rel="noreferrer" aria-label="View Fastify Reader on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card personal-project-card">
+          <div class="project-card-top"><p class="kicker">Deep learning fundamentals</p><span class="project-index" aria-hidden="true">03</span></div>
+          <h3>Neural Networks from Scratch</h3>
+          <p class="project-description">Modular neural network components implemented in NumPy: fully connected, convolutional, and recurrent layers, plus activations, optimizers, regularization, and loss functions.</p>
+          <ul class="project-technologies" aria-label="Technologies"><li>Python</li><li>NumPy</li><li>CNN</li><li>RNN</li></ul>
+          <a class="repository-link" href="https://github.com/akarshrajsingh7/Neural-Networks-From-Scratch" target="_blank" rel="noreferrer" aria-label="View Neural Networks from Scratch on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="project-card personal-project-card">
+          <div class="project-card-top"><p class="kicker">Deep learning fundamentals</p><span class="project-index" aria-hidden="true">04</span></div>
+          <h3>MNIST Neural Network in C++</h3>
+          <p class="project-description">Handwritten digit recognition built from scratch in C++. Implements forward and backward passes, ReLU and Softmax, cross-entropy loss, and SGD with momentum, with MNIST data loading and evaluation.</p>
+          <ul class="project-technologies" aria-label="Technologies"><li>C++</li><li>MNIST</li><li>Backpropagation</li></ul>
+          <a class="repository-link" href="https://github.com/akarshrajsingh7/Neural-Networks-From-Scratch-MNIST-C-plusplus" target="_blank" rel="noreferrer" aria-label="View MNIST Neural Network in C++ on GitHub">View on GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="professional-projects" class="section professional-projects" aria-labelledby="professional-title">
       <div class="container section-header">
         <div>
-          <p class="kicker">Selected work</p>
-          <h2>Projects</h2>
+          <p class="eyebrow">02 / Industry &amp; research</p>
+          <h2 id="professional-title">Professional Projects</h2>
         </div>
         <p class="section-lede">Selected work in agentic AI, research automation, healthcare, insurance, and diffusion models.</p>
       </div>
